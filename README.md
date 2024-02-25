@@ -1,11 +1,72 @@
-# Sample Snack app
+# News App 2.0
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+NewsAppV2 is a mobile application built with React Native, designed to deliver the latest news from various categories directly to your mobile device. Utilizing the [NewsAPI](https://newsapi.org/), this app brings current events from around the globe to your fingertips.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo-cli](https://docs.expo.io/get-started/installation).
+## Features
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+- **Multiple News Categories**: Access news from categories like Business, Health, and General.
+- **Top Headlines**: Get the latest top headlines from your country.
+- **User-friendly Interface**: Simple and intuitive user interface for easy navigation.
+- **Article Summaries**: Read summaries of articles directly within the app.
+- **Direct Links to Full Articles**: Open full articles in your default browser with just a tap.
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.io/c/snack).
+## Getting Started
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+- Node.js
+- npm or yarn
+- React Native CLI
+- An Android or iOS device or emulator
+
+### Installation
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/felixgonzales01/NewsAppV1-ReactNative.git
+```
+
+2. **Navigate to the project directory:**
+
+```bash
+cd NewsAppV1-ReactNative
+```
+
+3. **Install dependencies:**
+
+```bash
+npm install
+```
+or if you use yarn,
+```bash
+yarn install
+```
+
+4. **Set up the NewsAPI key:**
+
+Navigate to `config/config.js` and insert your NewsAPI key:
+```javascript
+export const API_KEY = 'YOUR_API_KEY_HERE';
+```
+
+5. **Run the app:**
+
+For Android:
+```bash
+npx react-native run-android
+```
+
+For iOS:
+```bash
+npx react-native run-ios
+```
+
+## Built With
+
+- [React Native](https://reactnative.dev/) - The framework used to develop the mobile application.
+- [Expo](https://expo.io/) - An open-source platform for making universal native apps.
+- [React Navigation](https://reactnavigation.org/) - Routing and navigation for React Native apps.
+- [NewsAPI](https://newsapi.org/) - API used to fetch news articles.
